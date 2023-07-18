@@ -1,0 +1,76 @@
+h1 {
+  color: white;
+  margin-top: 4vh;
+  margin-left: 4%;
+}
+h3 {
+  color: white;
+  display: inline;
+}
+#infoblock {
+  margin-bottom: 8vh;
+  color: white;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #111;
+}
+form {
+  text-align: center;
+  margin-bottom: 10vh;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+div {
+  left: 0;
+  right: 0;
+  padding: 1em;
+  text-align: center;
+}
+
+img {
+  width: 80%;
+}
+
+video {
+  margin-top: -4vh;
+  margin-bottom: 0.5vh;
+}
+
+@media screen and (max-width: 1200px) { /* Half screen */
+  section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  div {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 1000px) { /* Mobile */
+  section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  h1, #infoblock, div {
+    font-size: 2em;
+  }
+
+  form input {
+    font-size: 2rem;
+  }
+}
